@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>
+       Js GORILLAS
+    </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .angle1 {
+            height: 35px;  
+            font-family: monospace;
+            background-color: transparent;
+            color: transparent;
+            font-weight: bolder;
+            border: none;
+            width: 32px;
+            font-size: 16px;
+            position: absolute;
+            outline: none;
+
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+            /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        #screen{
+             display:none;
+             image-rendering:crisp-edges;
+             margin:auto;
+         }
+
+         #loader{
+             width: 50%;
+             margin: auto;
+             display: block;
+             margin-top: 5%;
+         }
+      
+    </style>
+    <script type="module" src="./js/main.js"></script>
+
+    </script>
+</head>
+
+<body>
+    <img id="loader" src="atlas/loader.jpeg"/>
+    <canvas id="screen" width="1024" height="768"></canvas>
+    <input type="number" id ="angle1" class="angle1" maxlength="3" >
+    <input type="number" id ="angle2" class="angle1" maxlength="3" >
+    <input type="number" id ="power1" class="angle1" maxlength="3" >
+    <input type="number" id ="power2" class="angle1" maxlength="3" >
+
+</body>
+
+</html>

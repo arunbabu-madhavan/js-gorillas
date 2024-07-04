@@ -1,0 +1,29 @@
+{
+    "imageUrl":"atlas/projectile_1.png",
+    "frames":[
+        {
+            "name":"step-1",
+            "rect":[0,0,10,11]
+        },
+        {
+            "name":"step-2",
+            "rect":[13,0,10,11]
+        },
+        {
+            "name":"step-3",
+            "rect":[22,0,10,11]
+        },
+        {
+            "name":"step-4",
+            "rect":[34,0,10,11]
+        }
+    ],
+    "animations":[
+        {
+            "name":"move",
+            "frameLen":0.15,
+            "frames":["step-1","step-2","step-3","step-4"]
+        }
+    ]
+   
+}

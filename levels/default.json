@@ -1,0 +1,61 @@
+{
+    "spritesheet": "tiles",
+    "layers": [
+        {
+            "tiles": [
+                {
+                    "name": "sky",
+                    "ranges": [
+                        [
+                            0,
+                            64,
+                            0,
+                            64
+                        ]
+                    ]
+                },
+                {
+                    "name": "red-block-on",
+                    "type": "ground",
+                    "ranges": []
+                },
+                {
+                    "name": "red-block-off",
+                    "type": "ground",
+                    "ranges": []
+                },
+                {
+                    "name": "grey-block-on",
+                    "type": "ground",
+                    "ranges": []
+                },
+                {
+                    "name": "grey-block-off",
+                    "type": "ground",
+                    "ranges": []
+                },
+                {
+                    "name": "cyan-block-on",
+                    "type": "ground",
+                    "ranges": []
+                },
+                {
+                    "name": "cyan-block-off",
+                    "type": "ground",
+                    "ranges": []
+                }
+            ]
+        }
+    ],
+    "entities": [
+        {
+            "name": "sun",
+            "pos": [
+                [
+                    490,
+                    20
+                ]
+            ]
+        }
+    ]
+}

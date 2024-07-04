@@ -1,0 +1,14 @@
+{
+    "imageUrl":"atlas/sun.png",
+    "frames":[
+        {
+            "name":"hit",
+            "rect":[0,0,64,52]
+        },
+        {
+            "name":"idle",
+            "rect":[64,0,64,52]
+        }
+    ]
+   
+}

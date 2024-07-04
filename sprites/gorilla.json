@@ -1,0 +1,29 @@
+{
+    "imageUrl":"atlas/gs.png",
+    "frames":[
+        {
+            "name":"right",
+            "rect":[0,0,30,32]
+        },
+        {
+            "name":"left",
+            "rect":[30,0,30,32]
+        },
+        {
+            "name":"idle",
+            "rect":[60,0,30,32]
+        },
+        {
+            "name":"empty",
+            "rect":[90,0,30,32]
+        }
+    ],
+    "animations":[
+        {
+            "name":"dance",
+            "frameLen":0.8,
+            "frames":["left","right","left","right"]
+        }
+    ]
+   
+}

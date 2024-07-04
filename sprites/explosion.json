@@ -1,0 +1,43 @@
+{
+    "imageUrl":"atlas/exp_small.png",
+    "frames":[
+        {
+            "name":"step-1",
+            "rect":[0,0,24,24]
+        },
+        {
+            "name":"step-2",
+            "rect":[23,0,24,24]
+        },
+        {
+            "name":"step-3",
+            "rect":[46,0,24,24]
+        },
+        {
+            "name":"step-4",
+            "rect":[71,0,24,24]
+        }
+        ,
+        {
+            "name":"step-5",
+            "rect":[96,0,24,24]
+        },
+        {
+            "name":"step-6",
+            "rect":[120,0,24,24]
+        }
+        ,
+        {
+            "name":"step-7",
+            "rect":[144,0,24,24]
+        }
+    ],
+    "animations":[
+        {
+            "name":"explode",
+            "frameLen":0.1,
+            "frames":["step-1","step-2","step-3","step-4","step-5","step-6","step-7"]
+        }
+    ]
+   
+}
