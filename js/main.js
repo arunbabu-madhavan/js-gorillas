@@ -41,16 +41,22 @@ async function main(canvas) {
     timer.start();
 }
 
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+
 
 async function createGameEnvironment(factory) {
     const gameEnv = new Entity();
 
     const playerController = new PlayerController(factory);
     const [gorilla1, gorilla2, bigexp] = await Promise.all([factory.gorilla(), factory.gorilla(), factory.bigExplosion()]);
-
-    playerController.setPlayer("Player 1", gorilla1, new Vec2(84, 50), 1, { angleElem: document.getElementById('angle1'),
+    const p1XPos = randomIntFromInterval(24,254);
+    const p1YPos = randomIntFromInterval(700,921);
+    playerController.setPlayer("Player 1", gorilla1, new Vec2(p1XPos, 50), 1, { angleElem: document.getElementById('angle1'),
          powerElem: document.getElementById('power1') });
-    playerController.setPlayer("Player 2", gorilla2, new Vec2(920, 50), -1 ,{ angleElem: document.getElementById('angle2'),
+    playerController.setPlayer("Player 2", gorilla2, new Vec2(p1YPos, 50), -1 ,{ angleElem: document.getElementById('angle2'),
         powerElem: document.getElementById('power2') });
     playerController.setWinningExplosion(bigexp);
     gameEnv.addTrait(playerController);
